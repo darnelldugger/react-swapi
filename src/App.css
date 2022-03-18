@@ -7,10 +7,32 @@
   padding: 1rem;
 }
 
-link {
+.list {
+  font-size: 25px;
+  gap: 10px;
   display: flex;
-  background-color: darkslategrey;
-  padding: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+#item {
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#starship-div {
+  height: 80px;
+  background-color: darkslategray;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: .3rem;
+  width: 70%;
+  
 }
 
 

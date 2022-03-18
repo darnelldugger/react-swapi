@@ -11,7 +11,7 @@ const StarshipList = (props) => {
   }, [])
   return ( 
     <>
-    <div>
+    <div className="list">
       {starships.map((starshipName) => (
         <Link id="item" to='/starship' key={starshipName.index} state={{starshipName}}  >
         
@@ -22,7 +22,7 @@ const StarshipList = (props) => {
       ))}
     </div>
     </>
-   );
+  );
 }
  
 export default StarshipList;
