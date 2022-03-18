@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.block {
+  background-color: darkslategrey;
+  width: fit-content;
+  border-radius: .3rem;
+  font-size: 30px;
+  padding: 1rem;
+  color: white;
+}
+
+#link {
+  color: white;
+}
+
+.results {
+  padding: 1rem;
+}

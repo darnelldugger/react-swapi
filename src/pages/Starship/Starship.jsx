@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { getDetails } from "../../services/sw-api";
+import './starship.css';
 
 
 const Starship = (props) => {
@@ -14,14 +15,17 @@ const Starship = (props) => {
 
   return ( 
   <>
-   <div>
+  <main>
+   <div className="block">
      {starshipDetails.name ?
       <>
-        <div className="item">{starshipDetails.name}</div>
-        <div className="item">{starshipDetails.model}</div>
-        <Link to={'/'}>
-          Return
-        </Link>
+        <div className="results">Name: {starshipDetails.name}</div>
+        <div className="results">Model: {starshipDetails.model}</div>
+        <div className="results">
+          <Link id="link"to={'/'}>
+            Return
+          </Link>
+        </div>
       </>
       :
       <>
@@ -29,9 +33,13 @@ const Starship = (props) => {
       </>
     }
    </div>
+   </main>
   </>
   );
 }
+
+  
+
     
 
 
